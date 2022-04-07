@@ -1,0 +1,57 @@
+.component {
+    margin: 16px;
+    padding: 16px;
+    background-color: #1a1b1e;
+    border-radius: 4px;
+  }
+  
+  .form {
+    width: 100%;
+    display: flex;
+  }
+  
+  .coordinates {
+    width: 100%;
+    padding: 16px 0px;
+    border-radius: 4px;
+    color: #c1c2c5;
+  }
+  
+  .coordinates:first-child {
+    padding-right: 8px;
+  }
+  
+  .coordinates:last-child {
+    padding-left: 8px;
+  }
+  
+  .coordinates > *:not(:last-child) {
+    margin-bottom: 4px;
+  }
+  
+  @media (max-width: 430px) {
+    .form {
+      flex-direction: column;
+    }
+  
+    .form > *:nth-child(2) {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+  
+    .coordinates:first-child {
+      padding-right: 0px;
+    }
+  
+    .coordinates:last-child {
+      padding-left: 0px;
+    }
+  }
+  
+  input[type="submit"] {
+    background-color: #228be6;
+    border: none;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
