@@ -78,7 +78,7 @@ const calculateDistance = async () => {
   data = data.toFixed(3);
 
   kilometers.value = data.split(".")[0];
-  meters.value = data.split(".")[1];
+  meters.value = parseInt(data.split(".")[1]);
 
   if (validation.isFilled(kilometers.value)) {
     isDistanceCalculated.value = true;
